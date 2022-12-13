@@ -145,6 +145,8 @@ section
     text-transform: uppercase;
     letter-spacing: 15px;
     text-shadow: 10px #fff;
-    font-style:inherit
+    font-style:inherit;
+    justify-content: center;
+    align-items: center;
 }
 
