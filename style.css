@@ -1,11 +1,12 @@
+/* Genel CSS sıfırlama ve box-sizing ayarları */
 *
 {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
- 
-    
 }
+
+/* Ana bölüm stilleri - Tam ekran orta hizalama */
 section 
 {
     display: flex;
@@ -15,6 +16,8 @@ section
     background: #121212;
     flex-direction: column ; 
 }
+
+/* Animasyonlu kase konteyneri */
 .bowl 
 {
     position: relative;
@@ -26,6 +29,8 @@ section
     transform-origin: bottom center;
     animation: animate 5s linear infinite;
 }
+
+/* Kase animasyonu */
 @keyframes animate 
 {
     0%
@@ -51,6 +56,8 @@ section
         transform: rotate(0deg);
     }
 }
+
+/* Kase üst kısmı */
 .bowl::before 
 {
     content: '';
@@ -64,6 +71,8 @@ section
     border-radius: 50%;
     box-shadow: 0 10px #222;
 }
+
+/* Kase iç yüzey efekti */
 .bowl::after 
 {
     content: '';
@@ -76,6 +85,8 @@ section
     height: 80px;
     background: rgba(255,255,255,0.05);
 } 
+
+/* Sıvı animasyonu */
 .liquid 
 {
     position: absolute;
@@ -90,6 +101,8 @@ section
     transform-origin: top center;
     animation: animateLiquid 5s linear infinite;
 }
+
+/* Sıvı dalgalanma animasyonu */
 @keyframes animateLiquid 
 {
     0%
@@ -113,6 +126,8 @@ section
         transform: rotate(0deg);
     }
 }
+
+/* Sıvı üst yüzey efekti */
 .liquid::before 
 {
     content: '';
@@ -124,6 +139,8 @@ section
     border-radius: 50%;
     filter: drop-shadow(0 0 70px #41c1fb);
 }
+
+/* Gölge efekti */
 .shadow 
 {
     position: absolute;
@@ -135,8 +152,9 @@ section
     background: rgba(0,0,0,0.5);
     border-radius: 50%;
 }
+
+/* "SOON" yazı stili */
 .info{
-    
     position: absolute;
     color: rgba(122, 241, 201, 0.522);
     margin-top: -650px;
